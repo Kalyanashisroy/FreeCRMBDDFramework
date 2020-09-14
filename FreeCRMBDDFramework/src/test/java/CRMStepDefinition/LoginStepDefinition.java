@@ -6,20 +6,26 @@
 //import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.WebElement;
 //import org.openqa.selenium.chrome.ChromeDriver;
-//
 //import cucumber.api.java.en.Given;
 //import cucumber.api.java.en.Then;
 //import cucumber.api.java.en.When;
 //
 //public class LoginStepDefinition {
 //	WebDriver driver;
+//	JenkinsLive jl;
+//	public LoginStepDefinition() {
+//		jl=new JenkinsLive();
+//	}
 //
 //	@Given("^user is already on login page$")
 //	public void user_is_already_on_login_page() throws Throwable {
-//		System.setProperty("webdriver.chrome.driver", "D:\\Browser\\chromedriver_win32_83\\chromedriver.exe");
+//		/*System.setProperty("webdriver.chrome.driver", "D:\\Browser\\chromedriver_win32_83\\chromedriver.exe");
 //		driver = new ChromeDriver();
 //		driver.manage().window().maximize();
-//		driver.get("https://ui.freecrm.com/");
+//		driver.get("https://ui.freecrm.com/");*/
+//		driver=jl.LoginPage(driver);
+//		
+//		
 //	}
 //
 //	@When("^title of login page is free CRM$")
